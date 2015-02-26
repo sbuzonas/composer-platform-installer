@@ -1,0 +1,34 @@
+{
+    "name": "fancyguy/composer-platform-installer",
+    "type": "composer-plugin",
+    "description": "Composer Plugin to install platform dependencies",
+    "keywords": ["composer", "installer", "platform", "extension", "pecl"]
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steve Buzonas",
+            "email": "steve@fancyguy.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/fancyguy/composer-platform-installer/issues"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "composer-plugin-api": "1.0.0"
+    },
+    "autoload": {
+        "psr-4": { "FancyGuy\\Composer\\Platform\\": "src/" }
+    },
+    "require-dev": {
+        "composer/composer": "1.0.x-dev",
+        "phpunit/phpunit": "~4.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "class": "FancyGuy\\Composer\\Platform\\PlatformInstallerPlugin"
+    }
+}
