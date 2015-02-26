@@ -2,7 +2,7 @@
     "name": "fancyguy/composer-platform-installer",
     "type": "composer-plugin",
     "description": "Composer Plugin to install platform dependencies",
-    "keywords": ["composer", "installer", "platform", "extension", "pecl"]
+    "keywords": ["composer", "installer", "platform", "extension", "pecl"],
     "license": "MIT",
     "authors": [
         {
