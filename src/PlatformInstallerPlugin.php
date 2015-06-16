@@ -16,8 +16,10 @@ use Composer\Plugin\PluginInterface;
 
 class PlatformInstallerPlugin implements PluginInterface
 {
-    
+
     public function activate(Composer $composer, IOInterface $io)
     {
+        $rm = $composer->getRepositoryManager();
+        $rm->setRepositoryClass('pecl', 'FancyGuy\Composer\Platform\Repository\PeclRepository');
     }
 }
